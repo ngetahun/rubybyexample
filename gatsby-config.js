@@ -2,8 +2,9 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: `Ruby by Example`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Learn ruby by example.`,
     author: `Natnael Getahun`,
+    siteUrl: `https://rubybyexample.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,8 +27,16 @@ module.exports = {
       options: {
         extensions: [".mdx", ".md"],
         defaultLayouts: {
-          default: path.resolve('./src/components/layout.js')
-        }
+          default: require.resolve('./src/components/layout.js')
+        },
+        mdPlugins: [
+          require("remark-slug"),
+          require("remark-images"),
+          require("remark-highlight.js"),
+          require("remark-gemoji"),
+          require("remark-gemoji-to-emoji"),
+          require("remark-autolink-headings")
+        ]
       }
     },
     {
@@ -57,4 +66,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
   ],
+  mapping: {
+    "MdxFrontmatter.frontmatter.author": `AuthorYaml`,
+  }
 }
