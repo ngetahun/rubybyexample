@@ -9683,10 +9683,10 @@ remark-gemoji-to-emoji@^1.1.0:
     gemoji "^4.0.0"
     unist-util-visit "^1.0.0"
 
-remark-gemoji@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/remark-gemoji/-/remark-gemoji-4.0.2.tgz#13bc8eb34a31f6539fb4989d26742a364528038a"
-  integrity sha512-XIMYWUSfDSmDU6cBEAWc6+gwMFpnmOOWOMaNfJmgAJNWbPLsQ2E8vvVWgK6fLTfgh3X5iZUHz0eD5WHoBz82cw==
+remark-gemoji@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/remark-gemoji/-/remark-gemoji-4.0.3.tgz#5170196b51e7b38ac65d8f9f408cbb3c7535b61c"
+  integrity sha512-MwsxKe5blW76ZRMs1FRlEGooKPUhia5wQ+BBTasqbYpV6Dhtealb22v6szJ49cLep8vWrFsayTjLYFVCKm4TEw==
   dependencies:
     gemoji "^4.1.0"
 
