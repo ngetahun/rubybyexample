@@ -4,9 +4,15 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby'
+import { notDeepEqual } from "assert";
+
+function formatDate (date) {
+  return new Date(date).toDateString()
+}
 
 export default ({data}) => {
   console.log(data)
+  const { edges: examples } = data.allMdx
   return (
     <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -19,11 +25,17 @@ export default ({data}) => {
       }}
     >
     </div>
-
-    {data.allMdx.edges.map(({node}) => (
-        <Link to={node.frontmatter.path}> { node.frontmatter.title } </Link>
+    <ul>
+    {examples.map(({node}) => (
+      <li key={node.id}>
+        <Link to={node.frontmatter.path}> 
+          <span>{ node.frontmatter.title } - { formatDate(node.frontmatter.date) }</span>
+          <i> {node.frontmatter.prelude} </i>
+        </Link>
+      </li>
       )
     )}
+    </ul>
 
   </Layout>
   )
@@ -37,6 +49,7 @@ export const query = graphql `
           frontmatter {
             path
             title
+            date
           }
         }
       }
