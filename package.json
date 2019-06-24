@@ -30,7 +30,7 @@
     "remark-slug": "^5.1.1"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "prettier": "^1.18.2"
   },
   "keywords": [
     "gatsby"
