@@ -1,0 +1,79 @@
+---
+title: Prelude to Ruby
+path: /examples/prelude_to_ruby
+date: 2019-03-27
+draft: true
+---
+
+
+# Prelude to ruby
+
+Ruby is a **functional**, **object-oriented**, **interpreted** language. It draws programming concepts from C, Simula, Lisp and Python. 
+It was created by _Yakoshi Natsamuto_. The first version was released in 1993; since then it has drawn a lot of developers. 
+
+> I created ruby to make the process of engineering easy
+> Yakoshi Natsamuto
+
+```ruby - prelude.rb
+
+# Printing hello world
+puts("Hello, world!")
+
+# Variable assignment
+a = 1
+b = 2
+# parentheses around functions are optional in ruby
+puts a + b
+
+# arithmetic operation
+puts 1 + 2 # add
+puts 100 - 90 # subtract
+puts 23 * 11 # multiply
+puts 34/2 # divide
+puts 18 % 3 # modulo
+
+# floating point operation
+puts Math::PI * 9 # area of a circle
+puts Math::E # Floating point constant of the Euler number
+
+# String operations
+a = "Ruby"
+b = "Programming"
+puts a + b
+
+# functions are defined by using the _def_
+# _end_ is used to signal the end of the function body
+def get_a_number
+    return '10'
+end
+```
+
+Ruby has a strong object-oriented programming foundation. All objects, including primitive types are Objects. All ruby objects
+inherit from the ```BasicObject``` instance. 
+
+```ruby oop_principles
+# Object Oriented Programming principles
+class Student
+    def initialize
+        # Instance variables begin with the '@' symbol
+        # They are only available to the instance methods (functions of the class)
+        @first_name = "Alan"
+        @last_name = "Turing" 
+    end
+
+    # Static methods, aka methods that can be called without creating an instance, are
+    # created by prepending _self_ identifier before the function name
+    def self.say_hello
+        puts "Hello there!"
+    end
+
+    # Instance methods can access the object by using the self keyword
+    def full_name
+        return @first_name + @last_name
+    end
+    # private methods are only available to the methods within the class
+    private def something_super_secret
+    end
+end
+```
+
