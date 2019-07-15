@@ -4938,10 +4938,10 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-gatsby-cli@^2.7.10, gatsby-cli@^2.7.2:
-  version "2.7.10"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.7.10.tgz#2001d9c305d101dc101d991274d93b7a569b1a71"
-  integrity sha512-L/5afJTmytI583+jQ6a53Au4uqN6jjLYT/ZkjjYT22Kcn8Ntl/nHcPD6qdDxOGF1EEnt9Go8aFCiql0jSkhOzw==
+gatsby-cli@^2.7.10, gatsby-cli@^2.7.14:
+  version "2.7.14"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.7.14.tgz#859b655b8b27ff3a0d829f3fdfbbdd8a1098bb17"
+  integrity sha512-9dCepYJx5HzLQAIqD7xi7I4qJ4fUq7X3e0/0YcIr7y9lt1YBAmQvA6XslazEpaASxY8Cegb3+rsI9L3cAup72Q==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/runtime" "^7.0.0"
@@ -4959,10 +4959,10 @@ gatsby-cli@^2.7.10, gatsby-cli@^2.7.2:
     execa "^0.8.0"
     fs-exists-cached "^1.0.0"
     fs-extra "^4.0.1"
-    gatsby-telemetry "^1.1.4"
+    gatsby-telemetry "^1.1.6"
     hosted-git-info "^2.6.0"
     is-valid-path "^0.1.1"
-    lodash "^4.17.10"
+    lodash "^4.17.14"
     meant "^1.0.1"
     node-fetch "^2.6.0"
     object.entries "^1.1.0"
@@ -5149,10 +5149,10 @@ gatsby-source-filesystem@^2.1.4:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-telemetry@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.1.4.tgz#406b41b2cd7330cdc2e3456329cd0e2ed8922c8f"
-  integrity sha512-EN56vj5o1A4kgVXSh9eCBCfRq7WRBtfEWcIhlMxE5oyPdit6XRpNLdQLQV6zbFz+u3qmGZv9Z05Hpw89Lw+EOQ==
+gatsby-telemetry@^1.1.4, gatsby-telemetry@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.1.6.tgz#957c95e1eefcfdfb5a82b4cb85d13e88e429bdd7"
+  integrity sha512-b0uIxlz8mjW/x45VbzDL3Rs5mrVVmJGMko87ldhCgFhrj2CyyxljUBC+C2daVfyrMhvHIWagFSygZ4BrijLjlA==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/runtime" "^7.0.0"
@@ -5164,7 +5164,7 @@ gatsby-telemetry@^1.1.4:
     fs-extra "^7.0.1"
     git-up "4.0.1"
     is-docker "1.1.0"
-    lodash "^4.17.10"
+    lodash "^4.17.14"
     node-fetch "2.3.0"
     resolve-cwd "^2.0.0"
     source-map "^0.5.7"
@@ -7448,7 +7448,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.11.1, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
+lodash@^4.11.1, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
   version "4.17.14"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
   integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
