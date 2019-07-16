@@ -7,7 +7,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^0.20.3",
     "@mdx-js/tag": "^0.20.3",
-    "gatsby": "^2.13.15",
+    "gatsby": "^2.13.23",
     "gatsby-cli": "^2.7.2",
     "gatsby-image": "^2.2.5",
     "gatsby-mdx": "^0.4.4",
