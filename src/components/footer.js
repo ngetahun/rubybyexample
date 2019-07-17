@@ -1,15 +1,14 @@
-import React from 'react'
-import {PropTypes} from 'prop-types'
-import {Link} from 'gatsby'
+import React from "react"
+import { Link } from "gatsby"
 
 const Footer = () => {
-    return(
+  return (
     <footer>
-        {new Date().getFullYear()}, Built with
-        {` `}
-        <Link to='https://www.gatsbyjs.org'> Gatsby </Link>
-        </footer>
-    )
+      {new Date().getFullYear()}, Built with
+      {` `}
+      <Link to="https://www.gatsbyjs.org"> Gatsby </Link>
+    </footer>
+  )
 }
 
 export default Footer

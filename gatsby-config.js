@@ -23,7 +23,7 @@ module.exports = {
       options: {
         extensions: ['.mdx', '.md'],
         defaultLayouts:
-            {default: require.resolve('./src/components/layout.js')},
+            {default: require.resolve('./src/components/layout')},
         mdPlugins: [
           require('remark-slug'), require('remark-images'),
           require('remark-gemoji'), require('remark-gemoji-to-emoji'),
@@ -38,6 +38,17 @@ module.exports = {
         footnotes: true,
         pedantic: true,
         gfm: false,
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          }
+        ]
       },
     },
     `gatsby-transformer-sharp`, `gatsby-plugin-sharp`, {
