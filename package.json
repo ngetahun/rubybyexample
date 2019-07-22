@@ -9,7 +9,7 @@
     "@mdx-js/react": "^1.0.27",
     "@mdx-js/tag": "^0.20.3",
     "eslint": "^6.0.1",
-    "gatsby": "^2.13.15",
+    "gatsby": "^2.13.32",
     "gatsby-cli": "^2.7.2",
     "gatsby-image": "^2.2.5",
     "gatsby-mdx": "^0.4.4",
