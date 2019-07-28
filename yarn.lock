@@ -10373,10 +10373,10 @@ relay-runtime@2.0.0:
     "@babel/runtime" "^7.0.0"
     fbjs "^1.0.0"
 
-remark-autolink-headings@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/remark-autolink-headings/-/remark-autolink-headings-5.1.0.tgz#73c92bcf6b0b4bddf2a52696d4434d77e4b1c962"
-  integrity sha512-+dMaZ9qxEiuC7EyCWdwE9cm6AlVP+GaoEIdD8DtjnqZdMEInt0fRoDNrILOBL3gh6v3MhzfGeus4VcRVXniYQQ==
+remark-autolink-headings@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/remark-autolink-headings/-/remark-autolink-headings-5.2.1.tgz#620639081372feddaf5d8e9838052f615931974d"
+  integrity sha512-pAsIVtbYWIkCDoR/hXJQAjXRnzQ5hjQzmiz2eQnZMIQbsiut3x5xEQYF+urpNEQSUG1/I+9wp2sSERgaxiaBdQ==
   dependencies:
     extend "^3.0.2"
     unist-util-visit "^1.0.1"
