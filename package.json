@@ -19,7 +19,7 @@
     "gatsby-plugin-sharp": "^2.2.9",
     "gatsby-remark-prismjs": "^3.3.3",
     "gatsby-source-filesystem": "^2.1.7",
-    "gatsby-transformer-remark": "^2.6.4",
+    "gatsby-transformer-remark": "^2.6.19",
     "gatsby-transformer-sharp": "^2.2.4",
     "jshint": "^2.10.2",
     "prism-react-renderer": "^0.1.7",
