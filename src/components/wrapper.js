@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import React from "react"
-import Highlight, { defaultProps } from "prism-react-renderer"
-import theme from "prism-react-renderer/themes/oceanicNext"
+import styled from 'styled-components';
+import React from 'react';
+import Highlight, { defaultProps } from 'prism-react-renderer';
+import theme from 'prism-react-renderer/themes/oceanicNext';
 
 // export const Wrapper = styled.div`
 //   font-family: sans-serif;
@@ -17,25 +17,23 @@ export const Pre = styled.pre`
     line-height: 1.3em;
     height: 1.3em;
   }
-`
+`;
 
 export const LineNo = styled.span`
   display: inline-block;
   width: 2em;
   user-select: none;
   opacity: 0.3;
-`
+`;
 
 const Wrapper = ({ children }) => {
   // const language = className.replace(/language-/, '')
-  console.log(children)
   return (
     <Highlight
       {...defaultProps}
       code={children}
-      language={"ruby"}
-      theme={theme}
-    >
+      language={'ruby'}
+      theme={theme}>
       {({ tokens, getLineProps, getTokenProps }) => (
         <pre>
           {tokens.map((line, i) => (
@@ -49,7 +47,7 @@ const Wrapper = ({ children }) => {
         </pre>
       )}
     </Highlight>
-  )
-}
+  );
+};
 
-export default Wrapper
+export default Wrapper;

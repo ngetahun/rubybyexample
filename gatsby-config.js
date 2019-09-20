@@ -4,10 +4,11 @@ module.exports = {
     title: `Ruby by Example`,
     description: `Learn ruby by example.`,
     author: `Natnael Getahun`,
-    siteUrl: `https://rubybyexample.com`
+    siteUrl: `https://rubybyexample.tech`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`, {
+    `gatsby-plugin-react-helmet`,
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -16,20 +17,27 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-filesystem`,
-      options: {name: `pages`, path: `${__dirname}/src/pages`}
+      options: {
+        name: `examples`,
+        path: `${__dirname}/src/pages/examples`,
+      },
     },
     {
-      resolve: `gatsby-mdx`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: ['.mdx', '.md'],
-        defaultLayouts:
-            {default: require.resolve('./src/components/layout')},
+        defaultLayouts: {
+          examples: require.resolve('./src/layout/Examples'),
+          default: require.resolve('./src/layout/Default'),
+        },
         mdPlugins: [
-          require('remark-slug'), require('remark-images'),
-          require('remark-gemoji'), require('remark-gemoji-to-emoji'),
-          require('remark-autolink-headings')
-        ]
-      }
+          require('remark-slug'),
+          require('remark-images'),
+          require('remark-gemoji'),
+          require('remark-gemoji-to-emoji'),
+          require('remark-autolink-headings'),
+        ],
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -47,25 +55,33 @@ module.exports = {
               showLineNumbers: false,
               noInlineHighlight: false,
             },
-          }
-        ]
+          },
+        ],
       },
     },
-    `gatsby-transformer-sharp`, `gatsby-plugin-sharp`, {
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `rubybyexample`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,  // This path is relative to the
-                                             // root of the site.
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the
+        // root of the site.
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        '@': path.join(__dirname, 'src'),
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline
     // functionality To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
-  ]
-}
+  ],
+};
