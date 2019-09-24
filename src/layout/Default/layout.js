@@ -5,8 +5,8 @@ import SiteHeader from '@/components/SiteHeader';
 import Footer from '@/components/footer';
 // import "./layout.css"
 import styled from 'styled-components';
+import { Content } from 'carbon-components-react/lib/components/UIShell';
 import { Normalize } from 'styled-normalize';
-import CodeWrapper from '@/components/code';
 
 const ContentWrapper = styled.div`
   min-height: 100%;
@@ -15,10 +15,9 @@ const InsideContentWrapper = styled.div`
   padding: 20px;
   padding-bottom: 50px;
 `;
-export class Layout extends Component {
+export default class Layout extends Component {
   render() {
     let children = this.props.children;
-    const hasPath = this.props.path || false;
     return (
       <StaticQuery
         query={graphql`
@@ -33,21 +32,15 @@ export class Layout extends Component {
         render={data => (
           <>
             <Normalize />
-            <ContentWrapper>
-              <InsideContentWrapper>
-                <SiteHeader siteTitle={data.site.siteMetadata.title} />
-                {hasPath ? (
-                  this.props.path.startsWith('/examples') ? (
-                    <CodeWrapper>{children}</CodeWrapper>
-                  ) : (
-                    <main>{children}</main>
-                  )
-                ) : (
+            <SiteHeader siteTitle={data.site.siteMetadata.title} />
+            <Content>
+              <ContentWrapper>
+                <InsideContentWrapper>
                   <main>{children}</main>
-                )}
-              </InsideContentWrapper>
-            </ContentWrapper>
-            <Footer />
+                </InsideContentWrapper>
+              </ContentWrapper>
+              <Footer />
+            </Content>
           </>
         )}
       />

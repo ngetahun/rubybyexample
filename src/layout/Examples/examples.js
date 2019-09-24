@@ -7,7 +7,7 @@ import SiteHeader from '@/components/SiteHeader';
 // import "./layout.css"
 import styled from 'styled-components';
 import { Normalize } from 'styled-normalize';
-import CodeWrapper from '@/components/code';
+import CodeWrapper from '@/components/code_wrapper';
 
 const ContentWrapper = styled.div`
   min-height: 100%;
@@ -16,7 +16,7 @@ const InsideContentWrapper = styled.div`
   padding: 20px;
   padding-bottom: 50px;
 `;
-export class Examples extends Component {
+export default class Examples extends Component {
   render() {
     let children = this.props.children;
     const hasPath = this.props.path || false;
