@@ -1,0 +1,11 @@
+$feature-flags: (
+  ui-shell: true,
+);
+
+@import 'carbon-components/scss/globals/scss/styles';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint';
+@import 'carbon-components/scss/globals/scss/typography';
+@import 'carbon-components/scss/globals/scss/vars';
+
+@import '../components/SiteHeader/site_header';

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import { Layout } from '@/layout/Default';
+import Layout from '@/layout/Default';
 import SEO from '@/components/seo';
 import { graphql } from 'gatsby';
+import './index.scss';
 
 function formatDate(date) {
   return new Date(date).toDateString();
