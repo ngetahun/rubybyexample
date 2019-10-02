@@ -6,7 +6,6 @@ import Footer from '@/components/footer';
 // import "./layout.css"
 import styled from 'styled-components';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
-import { Normalize } from 'styled-normalize';
 
 const ContentWrapper = styled.div`
   min-height: 100%;
@@ -31,7 +30,6 @@ export default class Layout extends Component {
         `}
         render={data => (
           <>
-            <Normalize />
             <SiteHeader siteTitle={data.site.siteMetadata.title} />
             <Content>
               <ContentWrapper>

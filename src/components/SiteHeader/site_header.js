@@ -8,7 +8,7 @@ import {
 
 const SiteHeader = ({ siteTitle }) => (
   <Header aria-label={siteTitle} className="SiteHeader__heading">
-    <HeaderName element={Link} to="/" prefix="">
+    <HeaderName element={Link} to="/" prefix="" className="SiteHeader__name">
       {siteTitle}{' '}
     </HeaderName>
   </Header>
