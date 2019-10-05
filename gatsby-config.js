@@ -1,10 +1,12 @@
 const path = require('path');
+const GTAG = process.env.GTAGS_ID;
+const GA_ID = process.env.GA_ID;
 module.exports = {
   siteMetadata: {
     title: `Ruby by Example`,
     description: `Learn ruby by example.`,
     author: `Natnael Getahun`,
-    siteUrl: `https://rubybyexample.tech`,
+    siteUrl: `https://www.rubybyexample.tech`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -66,6 +68,30 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: GTAG,
+
+        defaultDataLayer: function() {
+          return {
+            pageType: window.pageType,
+          };
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: GA_ID,
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
