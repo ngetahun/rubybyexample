@@ -9,13 +9,11 @@ const codeSnippetProps = {
   light: false,
 };
 
-const Container = styled.div`
-  position: absolute;
-  maxwidth: 100px;
-`;
+const Container = styled.div``;
+
 const components = {
   pre: props => <CodeSnippet {...codeSnippetProps} {...props} />,
-  code: props => <CodeSnippet {...codeSnippetProps} {...props} />,
+  // code: props => <CodeSnippet {...codeSnippetProps} {...props} />,
 };
 
 const CodeWrapper = props => {

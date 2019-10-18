@@ -1,5 +1,9 @@
 .SiteHeader__heading {
-  @include carbon--type-style('heading-01');
+  @include carbon--type-style('productive-heading-05');
 
-  background: '#e0e0e0';
+  background-color: '#e0e0e0';
+}
+
+.SiteHeader__name {
+  @include carbon--type-style('productive-heading-04');
 }
