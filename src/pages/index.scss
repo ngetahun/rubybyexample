@@ -3,8 +3,13 @@ $feature-flags: (
   grid-columns-16: true,
 );
 
-@import 'carbon-components/scss/components/ui-shell/ui-shell';
+@import '@carbon/themes/scss/themes';
 
+$carbon--theme: $carbon--theme--g10;
+@include carbon--theme();
+
+@import 'carbon-components/scss/components/ui-shell/ui-shell';
+@import 'carbon-components/scss/globals/grid/grid';
 @import 'carbon-components/scss/globals/scss/styles';
 @import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family';
 @import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint';
@@ -15,3 +20,4 @@ $feature-flags: (
 @import '../layout/Default/default_layout';
 @import '../layout/Examples/example_layout';
 @import '../components/SiteHeader/site_header';
+@import '../components/footer/footer';
