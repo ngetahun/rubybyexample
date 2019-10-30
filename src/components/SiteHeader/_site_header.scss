@@ -13,7 +13,11 @@
     margin: $spacing-05;
     color: #161616;
     @include carbon--type-style('display-03');
+    font-weight: 100;
 
+    .SiteHeader__boldend {
+      font-weight: 600;
+    }
     &:hover {
       text-decoration: none;
       color: inherit;

@@ -29,7 +29,7 @@ export default class Layout extends Component {
           }
         `}
         render={data => (
-          <>
+          <div className="bx--grid default_layout--container">
             <SiteHeader siteTitle={data.site.siteMetadata.title} />
             <Content>
               <ContentWrapper>
@@ -37,9 +37,9 @@ export default class Layout extends Component {
                   <main>{children}</main>
                 </InsideContentWrapper>
               </ContentWrapper>
-              <Footer />
             </Content>
-          </>
+            <Footer />
+          </div>
         )}
       />
     );

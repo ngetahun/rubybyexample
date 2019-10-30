@@ -6,10 +6,13 @@
   "author": "Natnael Getahun <connect@ngetahun.me>",
   "dependencies": {
     "@carbon/grid": "^10.6.0",
+    "@carbon/icons-react": "^10.6.1",
     "@carbon/themes": "^10.6.1",
     "@mdx-js/mdx": "^1.4.0",
     "@mdx-js/react": "^1.1.4",
     "@mdx-js/tag": "^0.20.3",
+    "babel-jest": "^24.9.0",
+    "babel-preset-gatsby": "^0.2.17",
     "carbon-components": "^10.5.1",
     "carbon-components-react": "^7.6.4",
     "carbon-icons": "^7.0.7",
@@ -29,7 +32,9 @@
     "gatsby-remark-prismjs": "^3.3.16",
     "gatsby-source-filesystem": "^2.1.7",
     "gatsby-transformer-remark": "^2.6.19",
-    "gatsby-transformer-sharp": "^2.2.23",
+    "gatsby-transformer-sharp": "^2.2.12",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
     "jshint": "^2.10.2",
     "node-sass": "^4.12.0",
     "prism-react-renderer": "^0.1.7",
@@ -38,6 +43,7 @@
     "react": "^16.10.1",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-test-renderer": "^16.10.2",
     "remark-autolink-headings": "^5.2.1",
     "remark-gemoji": "^4.0.3",
     "remark-gemoji-to-emoji": "^1.1.0",
@@ -46,7 +52,8 @@
     "styled-components": "^4.3.2",
     "styled-normalize": "^8.0.6",
     "typescript": "^3.5.3",
-    "unified-ui": "0.0.3"
+    "unified-ui": "0.0.3",
+    "yarn.lock": "^0.0.1-security"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",

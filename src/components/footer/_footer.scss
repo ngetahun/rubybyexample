@@ -1,0 +1,10 @@
+.footer_container {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-05;
+  background-color: #e0e0e0;
+  height: $layout-05;
+  display: flex;
+  align-content: space-between;
+
+  @include carbon--type-style('productive-heading-04');
+}
