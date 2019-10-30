@@ -3,20 +3,13 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import SiteHeader from '@/components/SiteHeader';
 import Footer from '@/components/footer';
-// import "./layout.css"
-import styled from 'styled-components';
+import ExampleList from '@/components/ExampleList';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 
-const ContentWrapper = styled.div`
-  min-height: 100%;
-`;
-const InsideContentWrapper = styled.div`
-  padding: 20px;
-  padding-bottom: 50px;
-`;
 export default class Layout extends Component {
   render() {
     let children = this.props.children;
+    console.log(children);
     return (
       <StaticQuery
         query={graphql`
@@ -31,12 +24,11 @@ export default class Layout extends Component {
         render={data => (
           <div className="bx--grid default_layout--container">
             <SiteHeader siteTitle={data.site.siteMetadata.title} />
-            <Content>
-              <ContentWrapper>
-                <InsideContentWrapper>
-                  <main>{children}</main>
-                </InsideContentWrapper>
-              </ContentWrapper>
+            <Content className="bx--row default_content__container">
+              <div className="bx--col-lg-16 default_content__topspacing"></div>
+              <main>{children}</main>
+              <ExampleList examples={this.props.exampleList} />
+              <div className="bx--col-lg-16 default_content__topspacing"></div>
             </Content>
             <Footer />
           </div>
@@ -46,7 +38,8 @@ export default class Layout extends Component {
   }
 }
 
-Layout.displayName = 'ExamplesLayout';
+Layout.displayName = 'DefaultLayout';
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  exampleList: PropTypes.array.isRequired,
 };

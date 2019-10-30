@@ -4,7 +4,7 @@ import { LogoGithub24 } from '@carbon/icons-react';
 
 const Footer = () => {
   return (
-    <footer className="bx--row footer_container">
+    <footer className="bx--row bx--footer footer_container">
       <div className="bx--col-lg-5"></div>
 
       <div className="bx--col-lg-5">

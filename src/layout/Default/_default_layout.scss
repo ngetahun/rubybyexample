@@ -1,3 +1,9 @@
 .default_layout--container {
-  margin-top: $spacing-07;
+  //   margin-top: $spacing-07;
+  .default_content__container {
+    margin-top: $layout-03;
+  }
+  .default_content__topspacing {
+    height: $layout-07;
+  }
 }
