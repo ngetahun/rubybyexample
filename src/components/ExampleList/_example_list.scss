@@ -1,0 +1,10 @@
+.bx--list--unordered {
+  .example_list--arrow {
+    list-style-type: none;
+    &::before {
+      content: '\1F517';
+      // margin-left: -20px;
+      margin-right: $spacing-05;
+    }
+  }
+}
