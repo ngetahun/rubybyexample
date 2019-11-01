@@ -56,7 +56,7 @@
     "yarn.lock": "^0.0.1-security"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.2",
+    "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^7.5.0",
     "gatsby-plugin-root-import": "^2.0.5",
     "husky": "^3.0.7",
