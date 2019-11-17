@@ -11,15 +11,6 @@ export default class ExampleList extends Component {
     let example_list = this.props.examples;
     return (
       <UnorderedList nested={false}>
-        {/* <ListItem className="example_list--arrow">
-                    Unordered List level 1
-                </ListItem>
-                <ListItem>
-                    Unordered List level 1
-                </ListItem>
-                <ListItem>
-                    Unordered List level 1
-                </ListItem> */}
         {example_list.map(({ node }) => (
           <ListItem className="example_list--arrow">
             <Link href={node.frontmatter.path}>
@@ -31,16 +22,6 @@ export default class ExampleList extends Component {
           </ListItem>
         ))}
       </UnorderedList>
-      // <ol class="bx--list--ordered">
-      // <li class="bx--list__item">Ordered List level 1
-      //     <ol class="bx--list--nested">
-      //     <li class="bx--list__item">Ordered List level 2</li>
-      //     <li class="bx--list__item">Ordered List level 2</li>
-      //     </ol>
-      // </li>
-      // <li class="bx--list__item">Ordered List level 1</li>
-      // <li class="bx--list__item">Ordered List level 1</li>
-      // </ol>
     );
   }
 }
