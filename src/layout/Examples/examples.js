@@ -21,13 +21,15 @@ export default class Examples extends Component {
           }
         `}
         render={data => (
-          <>
-            <Content>
-              <SiteHeader siteTitle={data.site.siteMetadata.title} />
+          <div className="bx--grid example_layout--container">
+            <SiteHeader siteTitle={data.site.siteMetadata.title} />
+            <Content className="bx--row example_content__container">
+              <div className="bx--col-lg-16 default_content__topspacing"></div>
               <CodeWrapper>{children}</CodeWrapper>
+              <div className="bx--col-lg-16 default_content__topspacing"></div>
             </Content>
             <Footer />
-          </>
+          </div>
         )}
       />
     );

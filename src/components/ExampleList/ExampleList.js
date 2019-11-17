@@ -47,5 +47,5 @@ export default class ExampleList extends Component {
 
 ExampleList.displayName = 'ExampleList';
 ExampleList.propTypes = {
-  examples: PropTypes.node.isRequired,
+  examples: PropTypes.arrayOf(PropTypes.node).isRequired,
 };
