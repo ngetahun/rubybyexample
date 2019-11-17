@@ -49,7 +49,7 @@
     "remark-gemoji-to-emoji": "^1.1.0",
     "remark-images": "^1.0.0",
     "remark-slug": "^5.1.2",
-    "styled-components": "^4.3.2",
+    "styled-components": "^4.4.1",
     "styled-normalize": "^8.0.6",
     "typescript": "^3.5.3",
     "unified-ui": "0.0.3",
