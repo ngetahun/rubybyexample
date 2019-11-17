@@ -24,4 +24,5 @@ module.exports = {
   ),
   StaticQuery: jest.fn(),
   useStaticQuery: jest.fn(),
+  //   graphql: jest.fn()
 };
