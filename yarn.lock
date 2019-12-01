@@ -3412,10 +3412,10 @@ carbon-components-react@^7.6.4:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^10.5.1:
-  version "10.6.1"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.6.1.tgz#7503b466657ad543dca366898cded5c1f721d99f"
-  integrity sha512-/BJ/qVTa7jaMPzrSExAD2ESHK3U0BG1Uy4M/OGHFkBIyg4fAWbnCXhVrkIy3wBoK2dQk9sm2/8rhEUq9KWFGLQ==
+carbon-components@^10.7.4:
+  version "10.7.4"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.7.4.tgz#e8c734ee2dd736117f6dba160260760c4e795614"
+  integrity sha512-eiAfSQQVa1BTv2y/hzgv7l4rpd/SksFBenxezXEXc6684duleBLj5Jz1wyMqLGVp5ZEjJuAIbAyf9zs89AT9ig==
   dependencies:
     carbon-icons "^7.0.7"
     flatpickr "4.6.1"
