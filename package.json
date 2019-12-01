@@ -51,7 +51,7 @@
     "remark-slug": "^5.1.2",
     "styled-components": "^4.4.1",
     "styled-normalize": "^8.0.6",
-    "typescript": "^3.5.3",
+    "typescript": "^3.7.2",
     "unified-ui": "0.0.3",
     "yarn.lock": "^0.0.1-security"
   },
