@@ -13001,6 +13001,11 @@ remark-retext@^3.1.3:
   dependencies:
     mdast-util-to-nlcst "^3.2.0"
 
+remark-ruby@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/remark-ruby/-/remark-ruby-0.2.1.tgz#5a8d5e09b72c66a5de929ddb2e12e62bd71ab320"
+  integrity sha512-DFU49hoWmlOsm9rRaJtNnMgDHWQdwxcV1CEb1j4sIBMmBlrAJH3EGwtObffFWcOPImZW84hGl8ToSV0XJLqcAw==
+
 remark-slug@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/remark-slug/-/remark-slug-5.1.2.tgz#715ecdef8df1226786204b1887d31ab16aa24609"
