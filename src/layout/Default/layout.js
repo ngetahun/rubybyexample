@@ -9,7 +9,6 @@ import { Content } from 'carbon-components-react/lib/components/UIShell';
 export default class Layout extends Component {
   render() {
     let children = this.props.children;
-    console.log(children);
     return (
       <StaticQuery
         query={graphql`
