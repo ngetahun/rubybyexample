@@ -22,14 +22,16 @@ export default class Layout extends Component {
           }
         `}
         render={data => (
-          <div className="bx--grid default_layout--container">
-            <SiteHeader siteTitle={data.site.siteMetadata.title} />
-            <Content className="bx--row default_content__container">
-              <div className="bx--col-lg-16 default_content__topspacing"></div>
-              <main>{children}</main>
-              <ExampleList examples={this.props.exampleList} />
-              <div className="bx--col-lg-16 default_content__topspacing"></div>
-            </Content>
+          <div>
+            <div className="bx--grid default_layout--container">
+              <SiteHeader siteTitle={data.site.siteMetadata.title} />
+              <Content className="bx--row default_content__container">
+                <div className="bx--col-lg-16 default_content__topspacing"></div>
+                <main>{children}</main>
+                <ExampleList examples={this.props.exampleList} />
+                <div className="bx--col-lg-16 default_content__topspacing"></div>
+              </Content>
+            </div>
             <Footer />
           </div>
         )}

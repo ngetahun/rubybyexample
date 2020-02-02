@@ -1,10 +1,12 @@
 .footer_container {
+  bottom: 0;
+  width: 100%;
   padding-top: $spacing-05;
   padding-bottom: $spacing-05;
   background-color: #e0e0e0;
   height: $layout-05;
-  display: flex;
+  flex-shrink: 0;
   align-content: space-between;
-
-  @include carbon--type-style('productive-heading-04');
+  position: fixed;
+  @include carbon--type-style('productive-heading-03');
 }
