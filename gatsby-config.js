@@ -40,6 +40,7 @@ module.exports = {
         },
         mdPlugins: [
           require('remark-slug'),
+          require('remark-ruby'),
           require('remark-images'),
           require('remark-gemoji'),
           require('remark-gemoji-to-emoji'),

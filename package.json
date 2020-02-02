@@ -48,6 +48,7 @@
     "remark-gemoji": "^4.0.3",
     "remark-gemoji-to-emoji": "^1.1.0",
     "remark-images": "^1.0.0",
+    "remark-ruby": "^0.2.1",
     "remark-slug": "^5.1.2",
     "styled-components": "^4.4.1",
     "styled-normalize": "^8.0.6",
