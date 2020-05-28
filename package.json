@@ -43,7 +43,7 @@
     "react": "^16.10.1",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-test-renderer": "^16.10.2",
+    "react-test-renderer": "^16.13.0",
     "remark-autolink-headings": "^5.2.1",
     "remark-gemoji": "^4.0.3",
     "remark-gemoji-to-emoji": "^1.1.0",
