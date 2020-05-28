@@ -3412,12 +3412,11 @@ carbon-components-react@^7.8.1:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^10.5.1:
-  version "10.6.1"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.6.1.tgz#7503b466657ad543dca366898cded5c1f721d99f"
-  integrity sha512-/BJ/qVTa7jaMPzrSExAD2ESHK3U0BG1Uy4M/OGHFkBIyg4fAWbnCXhVrkIy3wBoK2dQk9sm2/8rhEUq9KWFGLQ==
+carbon-components@^10.12.0:
+  version "10.12.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.12.0.tgz#a27649a5541c45833e0534f5f3b9d871f7cb0bc5"
+  integrity sha512-QPP4f6/11Buwtz+3JW/2wQKKL1QY6GZ3WIxfifpK2MyjhO8NW4LrYrLsbcwFr4kYQ6Aph18b8sHY21T61zaYLQ==
   dependencies:
-    carbon-icons "^7.0.7"
     flatpickr "4.6.1"
     lodash.debounce "^4.0.8"
     warning "^3.0.0"
