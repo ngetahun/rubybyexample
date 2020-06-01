@@ -45,7 +45,7 @@
     "react-helmet": "^5.2.1",
     "react-test-renderer": "^16.13.0",
     "remark-autolink-headings": "^5.2.1",
-    "remark-gemoji": "^4.0.3",
+    "remark-gemoji": "^5.0.0",
     "remark-gemoji-to-emoji": "^1.1.0",
     "remark-images": "^1.0.0",
     "remark-ruby": "^0.2.1",

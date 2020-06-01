@@ -901,13 +901,6 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.9.2":
-  version "7.9.6"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
-  integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
 "@babel/template@^7.1.0", "@babel/template@^7.4.0", "@babel/template@^7.4.4":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.6.0.tgz#7f0159c7f5012230dad64cca42ec9bdb5c9536e6"
@@ -7076,10 +7069,15 @@ gaze@^1.0.0:
   dependencies:
     globule "^1.0.0"
 
-gemoji@^4.0.0, gemoji@^4.1.0:
+gemoji@^4.0.0:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/gemoji/-/gemoji-4.2.1.tgz#88495f479a2e35a2c693e0ed321933372fc74c68"
   integrity sha512-V9lUpRSn+KQGavZx8Pk+6mxG3kaz21ae2kTCXuT36KaRPNgYU8eHtj/RcUCNFVvmwppsYYz3nnNS9lmcP5kTsg==
+
+gemoji@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/gemoji/-/gemoji-5.0.1.tgz#4cea541c735b74ec82edd56c2d46538cd54f355d"
+  integrity sha512-7yV9K8JdiK+h2M4YDnf/8bunJKYvs0t0p8eKh7zexVSuXddRG9Ue18ZViKOZljISk57DE64X19gvJfHZmhggGg==
 
 gensync@^1.0.0-beta.1:
   version "1.0.0-beta.1"
@@ -13192,12 +13190,12 @@ remark-gemoji-to-emoji@^1.1.0:
     gemoji "^4.0.0"
     unist-util-visit "^1.0.0"
 
-remark-gemoji@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/remark-gemoji/-/remark-gemoji-4.0.3.tgz#5170196b51e7b38ac65d8f9f408cbb3c7535b61c"
-  integrity sha512-MwsxKe5blW76ZRMs1FRlEGooKPUhia5wQ+BBTasqbYpV6Dhtealb22v6szJ49cLep8vWrFsayTjLYFVCKm4TEw==
+remark-gemoji@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/remark-gemoji/-/remark-gemoji-5.0.0.tgz#76464471746c056ab41dd22f09315d9233a42df9"
+  integrity sha512-dRCInn5+Bvzj91S1UU2OI1mkRRcC+9NVjr5CnGCVtsZu+Ps3WHXIRWmwniWar03c1F27Mt16qVkH0hA78vLq1g==
   dependencies:
-    gemoji "^4.1.0"
+    gemoji "^5.0.0"
 
 remark-images@^1.0.0:
   version "1.0.0"
