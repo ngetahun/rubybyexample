@@ -8,7 +8,7 @@
     "@carbon/grid": "^10.6.0",
     "@carbon/icons-react": "^10.6.1",
     "@carbon/themes": "^10.6.1",
-    "@mdx-js/mdx": "^1.6.5",
+    "@mdx-js/mdx": "^1.6.6",
     "@mdx-js/react": "^1.5.1",
     "@mdx-js/tag": "^0.20.3",
     "babel-jest": "^24.9.0",
