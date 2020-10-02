@@ -6,7 +6,7 @@
   "author": "Natnael Getahun <connect@ngetahun.me>",
   "dependencies": {
     "@carbon/grid": "^10.6.0",
-    "@carbon/icons-react": "^10.6.1",
+    "@carbon/icons-react": "^10.19.0",
     "@carbon/themes": "^10.6.1",
     "@mdx-js/mdx": "^1.6.5",
     "@mdx-js/react": "^1.5.1",
