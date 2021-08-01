@@ -14434,13 +14434,15 @@ relay-runtime@9.1.0:
     "@babel/runtime" "^7.0.0"
     fbjs "^1.0.0"
 
-remark-autolink-headings@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/remark-autolink-headings/-/remark-autolink-headings-5.2.1.tgz#620639081372feddaf5d8e9838052f615931974d"
-  integrity sha512-pAsIVtbYWIkCDoR/hXJQAjXRnzQ5hjQzmiz2eQnZMIQbsiut3x5xEQYF+urpNEQSUG1/I+9wp2sSERgaxiaBdQ==
+remark-autolink-headings@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/remark-autolink-headings/-/remark-autolink-headings-6.1.0.tgz#45fa1f8860e0fc6b78bcbc4b0f5d5dd696170e04"
+  integrity sha512-oeMSIfjaNboWPDVKahQAjF8iJ8hsz5aI8KFzAmmBdznir7zBvkgUjYE/BrpWvd02DCf/mSQ1IklznLkl3dVvZQ==
   dependencies:
-    extend "^3.0.2"
-    unist-util-visit "^1.0.1"
+    "@types/hast" "^2.0.0"
+    extend "^3.0.0"
+    unified "^9.0.0"
+    unist-util-visit "^2.0.0"
 
 remark-footnotes@2.0.0:
   version "2.0.0"
@@ -16909,6 +16911,18 @@ unified@^8.4.0, unified@^8.4.2:
     trough "^1.0.0"
     vfile "^4.0.0"
 
+unified@^9.0.0:
+  version "9.2.2"
+  resolved "https://registry.yarnpkg.com/unified/-/unified-9.2.2.tgz#67649a1abfc3ab85d2969502902775eb03146975"
+  integrity sha512-Sg7j110mtefBD+qunSLO1lqOEKdrwBFBrR6Qd8f4uwkhWNlbkaqwHse6e7QvD3AP/MNoJdEDLaf8OxYyoWgorQ==
+  dependencies:
+    bail "^1.0.0"
+    extend "^3.0.0"
+    is-buffer "^2.0.0"
+    is-plain-obj "^2.0.0"
+    trough "^1.0.0"
+    vfile "^4.0.0"
+
 union-value@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/union-value/-/union-value-1.0.1.tgz#0b6fe7b835aecda61c6ea4d4f02c14221e109847"
@@ -17091,7 +17105,7 @@ unist-util-visit@2.0.3, unist-util-visit@^2.0.0, unist-util-visit@^2.0.2:
     unist-util-is "^4.0.0"
     unist-util-visit-parents "^3.0.0"
 
-unist-util-visit@^1.0.0, unist-util-visit@^1.0.1, unist-util-visit@^1.1.0, unist-util-visit@^1.4.1:
+unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.1.tgz#4724aaa8486e6ee6e26d7ff3c8685960d560b1e3"
   integrity sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==
